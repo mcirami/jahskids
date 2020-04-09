@@ -1,0 +1,77 @@
+#global_header {
+    @include span-columns(12);
+
+    .top_header {
+        padding: 10px 0;
+    }
+
+    .sub_heading {
+        float: left;
+
+        h3 {
+            @include aleobolditalic;
+            color: $orange;
+            margin: 0;
+        }
+    }
+
+    .social {
+        width: 12%;
+        float: right;
+
+        a {
+            float: left;
+
+            &:last-child {
+                float: right;
+            }
+        }
+    }
+
+    .bottom_header {
+        background: $green;
+        padding: 20px 0;
+
+        .logo {
+            float: left;
+        }
+
+        .menu {
+            float: right;
+
+            nav {
+                float: left;
+
+                ul {
+                    float: left;
+                    margin-bottom: 0;
+
+                    li {
+                        width: auto;
+                        float: left;
+                        padding: 10px 20px;
+
+                        a {
+                            color: $white;
+                            text-transform: uppercase;
+
+                            &:hover {
+                                color: $darkGreen;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .button_wrap {
+            display: inline-block;
+            vertical-align: -webkit-baseline-middle;
+
+
+            a {
+                padding: 10px 20px;
+            }
+        }
+    }
+}

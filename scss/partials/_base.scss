@@ -1,0 +1,114 @@
+* {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-bottom: 10px;
+}
+
+h2, h3, h4 {
+    margin: 0;
+}
+
+html {
+	overflow-x: hidden;
+	font-size: 62.5%;
+	min-height: 100%;
+	float: left;
+	width: 100%;
+}
+
+body {
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+	color: $darkGray;
+	
+	&.fixed {
+		position: fixed;
+	}
+}
+
+.full_width {
+	@include span-columns(12);
+}
+
+a {
+	text-decoration: none;
+	/*@include transition(color 1s ease-in);*/
+	cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	width: 100%;
+	height: auto;
+	float: left;
+}
+
+::selection {
+	background: lighten($orange, 5%);
+	opacity: 0.8;
+	color: $white;
+	text-shadow: 0 0 1px $charcoal;
+}
+
+::moz-selection {
+	background: lighten($orange, 5%);
+	opacity: 0.8;
+	color: $white;
+	text-shadow: 0 0 1px $charcoal;
+}
+
+.oldies {
+	background: lighten($charcoal, 20%);
+	color: $white;
+	text-align: center;
+	padding: 1rem 0;
+}
+
+.button {
+	padding: 8px 22px;
+    text-transform: uppercase;
+    display: inline-block;
+
+	&.orange {
+		background: $orange;
+		color: $white;
+
+        &:hover {
+            background: $orangeHover;
+        }
+	}
+
+    &.transparent_green {
+        border: 1px solid $darkGreen;
+        color: $darkGreen;
+        background: none;
+
+        &:hover {
+            background: $darkGreen;
+            color: $white;
+        }
+    }
+}
+
+.page_header {
+    text-align: center;
+    padding: 30px 0;
+
+    h2 {
+        @include tradegothicbold;
+        color: $orange;
+        text-transform: uppercase;
+        font-size: 48px;
+    }
+}

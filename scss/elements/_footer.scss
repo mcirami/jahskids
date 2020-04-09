@@ -1,0 +1,37 @@
+#global_footer {
+    padding: 20px 0;
+    background: $darkGray;
+
+    .columns_wrap {
+        color: $white;
+        text-transform: uppercase;
+
+        .column {
+            @include span-columns(4);
+            text-align: center;
+
+            a {
+                color: $linkText;
+            }
+
+            .column_content {
+                width: 50%;
+                margin: auto;
+                display: inline-block;
+                text-align: left;
+            }
+
+            .social {
+                a {
+                    float: left;
+                }
+            }
+        }
+    }
+
+    .copy {
+        text-align: center;
+        text-transform: uppercase;
+        color: $darkGrayOrange;
+    }
+}

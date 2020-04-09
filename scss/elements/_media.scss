@@ -1,0 +1,78 @@
+.media_page {
+
+    .nav-tabs {
+        border-bottom: 4px solid $darkGreen;
+
+        .nav-link {
+            @include aleoregular;
+            padding: 10px 40px;
+            width: 20%;
+            text-align: center;
+            text-transform: uppercase;
+            border: 1px solid $darkGreen;
+            border-bottom: none;
+            margin-right: 10px;
+            color: $darkGreen;
+
+            &.active {
+                color: $white;
+                background-color: $darkGreen;
+                border-color: $darkGreen;
+            }
+
+            &:hover {
+                background-color: $darkGreen;
+                color: $white;
+            }
+        }
+    }
+
+    .tab-content {
+        @include span-columns(12);
+        padding: 20px 0;
+
+        &>.active {
+            @include span-columns(12);
+        }
+    }
+
+    .full_row {
+        margin-bottom: 5px;
+
+        .column {
+            @include span-columns(6);
+            @include aleoregular;
+
+            .video_wrap {
+                @include span-columns(12);
+                margin-bottom: 10px;
+            }
+
+            h3 {
+                @include span-columns(12);
+                margin-bottom: 5px;
+            }
+
+            .full_row {
+                padding: 5px;
+
+                p {
+                    @include span-columns(3.2);
+                    color: $lightGray;
+                    font-size: 14px;
+                }
+
+                .social {
+                    @include span-columns(8.8);
+
+                    a {
+                        float: left;
+                        margin-right:1%;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
